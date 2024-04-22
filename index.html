@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Shop</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background-color: #fff;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Clothing Shop</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Products</a> |
+            <a href="#">Cart</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="product">
+            <img src="dress1.jpg" alt="Beautiful Dress">
+            <h2>Stylish Summer Dress</h2>
+            <p>Get ready for summer with this beautiful floral dress. Perfect for beach parties!</p>
+            <button onclick="addToCart('Stylish Summer Dress', 49.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="dress2.jpg" alt="Elegant Evening Gown">
+            <h2>Elegant Evening Gown</h2>
+            <p>Turn heads at your next event with this stunning evening gown.</p>
+            <button onclick="addToCart('Elegant Evening Gown', 129.99)">Add to Cart</button>
+        </div>
+        <!-- Add more product descriptions here -->
+    </div>
+    <footer>
+        © 2024 Clothing Shop. All rights reserved.
+    </footer>
+
+    <script>
+        // Function to add items to the cart
+        function addToCart(productName, price) {
+            // Implement your cart logic here (e.g., update a cart object)
+            console.log(`Added ${productName} to cart. Price: $${price}`);
+        }
+    </script>
+</body>
+</html>
